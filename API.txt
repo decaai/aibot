@@ -16,7 +16,7 @@
 
         async function fetchResponse(userMessage) {
             try {
-                const response = await fetch("https://backend.buildpicoapps.com/aero/run/llm-api?pk=v1-Z0FBQUFBQm5IZkJDMlNyYUVUTjIyZVN3UWFNX3BFTU85SWpCM2NUMUk3T2dxejhLSzBhNWNMMXNzZlp3c09BSTR6YW1Sc1BmdGNTVk1GY0liT1RoWDZZX1lNZlZ0Z1dqd3c9PQ==", {
+                const response = await fetch("https://js.puter.com/v2/", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
@@ -59,4 +59,5 @@
             const botResponse = await fetchResponse(userMessage);
             chatContent.appendChild(createMessageElement(botResponse, false));
         });
+
     </script>
